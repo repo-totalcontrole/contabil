@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * Entidade referente aos atributos do usuário do sistema
+ * Entidade referente aos atributos do usuario do sistema
  * @author Evandro Luz
  *
  */

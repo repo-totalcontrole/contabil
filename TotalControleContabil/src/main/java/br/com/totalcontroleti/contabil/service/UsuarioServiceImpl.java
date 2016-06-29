@@ -17,31 +17,26 @@ public class UsuarioServiceImpl implements UsuarioService {
 		this.UsuarioDAO = UsuarioDAO;
 	}
 
-	@Override
 	@Transactional
 	public void addUsuario(Usuario p) {
 		this.UsuarioDAO.addUsuario(p);
 	}
 
-	@Override
 	@Transactional
 	public void updateUsuario(Usuario p) {
 		this.UsuarioDAO.updateUsuario(p);
 	}
 
-	@Override
 	@Transactional
 	public List<Usuario> listUsuarios() {
 		return this.UsuarioDAO.listUsuarios();
 	}
 
-	@Override
 	@Transactional
 	public Usuario getUsuarioById(int id) {
 		return this.UsuarioDAO.getUsuarioById(id);
 	}
 
-	@Override
 	@Transactional
 	public void removeUsuario(int id) {
 		this.UsuarioDAO.removeUsuario(id);

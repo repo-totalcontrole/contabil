@@ -21,14 +21,12 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 		this.sessionFactory = sf;
 	}
 
-	@Override
 	public void addUsuario(Usuario p) {
 		Session session = this.sessionFactory.getCurrentSession();
 		session.persist(p);
 		logger.info("Usuario saved successfully, Usuario Details="+p);
 	}
 
-	@Override
 	public void updateUsuario(Usuario p) {
 		Session session = this.sessionFactory.getCurrentSession();
 		session.update(p);
@@ -36,7 +34,6 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 	}
 
 	@SuppressWarnings("unchecked")
-	@Override
 	public List<Usuario> listUsuarios() {
 		Session session = this.sessionFactory.getCurrentSession();
 		List<Usuario> UsuariosList = session.createQuery("from Usuario").list();
@@ -46,7 +43,6 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 		return UsuariosList;
 	}
 
-	@Override
 	public Usuario getUsuarioById(int id) {
 		Session session = this.sessionFactory.getCurrentSession();		
 		Usuario p = (Usuario) session.load(Usuario.class, new Integer(id));
@@ -54,7 +50,6 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 		return p;
 	}
 
-	@Override
 	public void removeUsuario(int id) {
 		Session session = this.sessionFactory.getCurrentSession();
 		Usuario p = (Usuario) session.load(Usuario.class, new Integer(id));

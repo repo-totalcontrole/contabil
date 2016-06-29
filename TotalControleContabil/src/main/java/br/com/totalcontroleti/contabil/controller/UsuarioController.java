@@ -27,7 +27,7 @@ public class UsuarioController {
 	public String listUsuarios(Model model) {
 		model.addAttribute("usuario", new Usuario());
 		model.addAttribute("listUsuarios", this.usuarioService.listUsuarios());
-		return "usuario";
+		return "/cadastros/usuario";
 	}
 	
 	//For add and update Usuario both
@@ -57,7 +57,7 @@ public class UsuarioController {
     public String editUsuario(@PathVariable("id") int id, Model model){
         model.addAttribute("usuario", this.usuarioService.getUsuarioById(id));
         model.addAttribute("listUsuarios", this.usuarioService.listUsuarios());
-        return "usuario";
+        return "/cadastros/usuario";
     }
 	
 }
