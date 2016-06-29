@@ -8,11 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * Entity bean with JPA annotations
- * Hibernate provides JPA implementation
- * @author pankaj
+ * Entidade referente aos atributos do usuário do sistema
+ * @author Evandro Luz
  *
  */
+
 @Entity
 @Table(name="USER")
 public class Usuario {
