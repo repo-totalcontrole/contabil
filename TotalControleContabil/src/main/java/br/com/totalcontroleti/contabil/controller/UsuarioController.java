@@ -15,7 +15,7 @@ import br.com.totalcontroleti.contabil.service.UsuarioService;
 @Controller
 public class UsuarioController {
 	
-	private UsuarioService usuarioService;
+	private  UsuarioService usuarioService;
 	
 	@Autowired(required=true)
 	@Qualifier(value="usuarioService")
