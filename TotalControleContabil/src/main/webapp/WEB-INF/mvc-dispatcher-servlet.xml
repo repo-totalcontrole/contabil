@@ -41,6 +41,9 @@
 		<beans:property name="annotatedClasses">
 			<beans:list>
 				<beans:value>br.com.totalcontroleti.contabil.model.Usuario</beans:value>
+		        <beans:value>br.com.totalcontroleti.contabil.model.Clientes</beans:value>
+				<beans:value>br.com.totalcontroleti.contabil.model.Endereco</beans:value>
+	 		    <beans:value>br.com.totalcontroleti.contabil.model.Processos</beans:value>
 			</beans:list>
 		</beans:property>
 		<beans:property name="hibernateProperties">
